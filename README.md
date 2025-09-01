@@ -1,14 +1,19 @@
-Auto Approve Product reviews
-=========
+# Auto Approve 5-Star Product Reviews
 
-This is the WordPress/WooCommerce plugin to use if your store gets so many reviews you don't have time to review them all!
+This WordPress plugin automatically approves WooCommerce product reviews, but **only** if the review rating is 5 stars.
 
-The plugin automatically approves reviews with 5 ⭐️, and has options to change the minimum rating that can be auto-approved.
+## Installation
 
-If the review is marked as spam by Akismet or another spam checking tool, the review will not be automatically approved. It will stay in queue for manual checking.
+1. Copy the `AutoApproveReview` folder into your WordPress `wp-content/plugins/` directory.
+2. Activate **Auto Approve 5-Star Product Reviews** from the WordPress Admin → Plugins page.
 
-> This repo is used only for development, downloading & installing from here won't work as expected. Install from [WordPress.org plugin page](https://wordpress.org/plugins/auto-approve-product-reviews/)
+## Features
 
-## WordPress.org
+- Automatically approves reviews with a 5-star rating.
+- Leaves all other reviews for manual moderation.
+- Sanitizes comment content before processing.
 
-Head over to [plugin's page on WordPress.org](https://wordpress.org/plugins/auto-approve-product-reviews/) for more info, reviews and support.
+## Notes
+
+- Requires WooCommerce to be active.
+- `onActivation()` is included as a placeholder for future setup tasks.
